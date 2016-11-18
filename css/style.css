@@ -6,8 +6,6 @@ Global CSS
 --------------------------------------------------*/
 * {
     box-sizing:border-box;
-	background-color: chocolate;	
-	color: white;
 }
 
 /*end: Global CSS
@@ -19,6 +17,45 @@ Global CSS
 /*--------------------------------------------------
 Structure
 --------------------------------------------------*/
+.main-wrapper {
+	max-width: 500px;
+	margin: auto;
+	/*padding: 50px;*/ /*good for bigger screen*/
+}
+
+.question_mark{
+	    width: 104%;
+	float: right;
+	padding-left: 96%;
+}
+
+.header_wrapper {
+	/*background:#0B73EF; */	/*test*/
+	
+    max-width: 265px;
+    padding: 10px 10%;
+    margin: 0 auto;
+}
+
+button, input {
+	width: 200px;
+    height: 32px;
+    font-size: 14px;
+    border: none;
+}
+
+input {
+	margin-bottom: 5px;
+	padding:5px;
+	text-align: center;
+	border: 0px solid;
+}
+
+.num_table_view{
+    /*background: rebeccapurple;*/  	/*test*/
+    max-width: 140px;
+    margin: 0 auto;
+}
 
 
 /*end: Structure
@@ -30,9 +67,31 @@ Structure
 /*--------------------------------------------------
 Colors
 --------------------------------------------------*/
-html {
-		
+.main-wrapper,
+header{
+	background:#ECEAEA;
+	transition: 1s;	
+
 }
+
+.is-sticky header {
+	background: rgba(31, 82, 161, 0.92);
+	
+}
+
+input {
+	color:#666565;
+}
+
+p {
+	color:#707070;
+}
+
+button {
+	background: #28ca0c;
+    color: white;
+}
+
 
 /*end: Colors
 --------------------------------------------------*/
