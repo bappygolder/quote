@@ -8,12 +8,13 @@
 	<link rel="stylesheet" href="css/normalize.css" type="text/css"> <!--minified normzlized.css-->
 	<link rel="stylesheet" href="js_and_plugins/animsition/animsition.min.css"> <!--Animsition file-->
 	<link rel="stylesheet" href="js_and_plugins/slick/slick.css" type="text/css"> <!--slick-->
+	<link rel="stylesheet" href="js_and_plugins/slick/slick-theme.css" type="text/css"> <!--slick-->
 	<link rel="stylesheet" href="style.css" type="text/css"> <!--main css-->
 		
 </head>
 
 <body>
-	<div class="quotes_slider">
+	<div class="quotes_slider animsition">
 		<div>
 			<h1>Passion is like fire in your belly, if you contain it it produces great results like light from fire. If you can't control it can consume you like devastating bushfire.</h1>
 			<h2>- Bappy Golder</h2>
@@ -31,7 +32,12 @@
 	<script src="js_and_plugins/slick/slick.min.js"></script> <!--slick file-->
 	<script src="js_and_plugins/main.js"></script> <!--main JS file-->	
 	<script>
-		$(".quotes_slider").slick();
+		$(".quotes_slider").slick({
+			fade: true, 			//fade between slides instead of sliding
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: true				//removes previous and next buttons and 
+		});
 	</script>
 	
 </body>
