@@ -22,6 +22,7 @@ Structure
 .quotes_slider {
 	max-width: 80%;
 	margin: 0 auto; /*center the whole slider*/
+	margin-top: 50px;
 }
 
 /*end: Structure
