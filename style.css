@@ -20,7 +20,8 @@ Global CSS
 Structure
 --------------------------------------------------*/
 .quotes_slider {
-	max-width: 80%;
+    max-width: 400px;
+    width: 80%;
 	margin: 0 auto; /*center the whole slider*/
 	margin-top: 50px;
 }
@@ -57,6 +58,12 @@ Fonts & Typography
 	font-weight: 100; /*lightest lato font*/
 }
 
+/*Author Names*/
+h2 {
+    margin-right: 10px;
+    text-align: right;
+}
+
 /*end: Fonts & Typography
 --------------------------------------------------*/
 
@@ -66,7 +73,10 @@ Media Queries
 --------------------------------------------------*/
 
 /*If screen is bigger than given size below*/
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 450px) {
+	.quotes_slider {
+		margin-top: 100px;	
+	}
 
 }
 
