@@ -37,6 +37,7 @@ Colors
 --------------------------------------------------*/
 * {
 	color: white;
+	background-color: #4951e6;
 }
 
 h2 {
@@ -53,7 +54,6 @@ h2 {
 Fonts & Typography
 --------------------------------------------------*/
 * {
-	background-color: #4951e6;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100; /*lightest lato font*/
 }
