@@ -21,10 +21,13 @@ function All_quotes(quote, author){
 }
 
 var q1 = new All_quotes("Your past doesn't equal your future.", "Tony Robbins");
+var q1 = new All_quotes("Your past doesn't equal your future.", "Tony Robbins");
+var q1 = new All_quotes("Your past doesn't equal your future.", "Tony Robbins");
+var q1 = new All_quotes("Your past doesn't equal your future.", "Tony Robbins");
 
 //add quotes to page
-$("#qute_view").html(All_quotes.q1);
-$("#author_view").append(all_quotes.q1.author);
+$("#qute_view").html(q1.quote);
+$("#author_view").append(q1.author);
 
 //show tooltip with help options
 //hide and show the button on input focus
