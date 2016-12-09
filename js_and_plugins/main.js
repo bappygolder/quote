@@ -14,37 +14,33 @@ $(".animsition").animsition();
 };*/
 
 //crate quote object using constructor function
-function All_quotes(quote, author){
-	"use strict";	
-	this.quote = quote;
-	this.author = author;	
+function quoteListObj(){
+	"use strict";
+	this.quoteList = [];
 }
 
-//all quotes instances - template: const qN = new All_quotes("", "");
-const q1 = new All_quotes(
-			"Your past doesn't equal your future.", 
-			"Tony Robbins"
-		);
-const q2 = new All_quotes(
-			"The secret of change is to focus all your energy, not fighting the old, but on building the new.", 
-			"Socrates"
-		);
-const q3 = new All_quotes(
-			"Keep calm and carry on.", 
-			"Winston Churchill"
-		);
-const q4 = new All_quotes(
-			"Passion is like fire in your belly. If you contain it, it produces great results like light from fire. If you can't control it can consume you like devastating bushfire.", 
-			"Bappy Golder"
-		);
-const q5 = new All_quotes(
-			"When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.", 
-			"Henry Ford"
-		);
+quoteListObj.prototype.add = function(quote, author){
+	"use strict";
+	var new_quote = [];
+	
+	//add quote to the new quote array
+	new_quote.push(quote);
+	new_quote.push(author);
+	
+	//add the new quote array to the quote list
+	this.quoteList.push(new_quote);
+	
+};
+
+//instantiate new quote list
+var the_quote_list = new quoteListObj();
+
+the_quote_list.add("Your past doesn't equal your future.", "Tony Robbins");
+the_quote_list.add("Keep calm and carry on.", "Winston Churchill");
 
 //add quotes to page
-$("#qute_view").html(q1.quote);
-$("#author_view").append(q1.author);
+$("#qute_view").html(the_quote_list.quoteList[0][0]);
+$("#author_view").append(the_quote_list.quoteList[0][1]);
 
 //show tooltip with help options
 //hide and show the button on input focus
