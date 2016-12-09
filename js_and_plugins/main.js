@@ -19,6 +19,7 @@ function quoteListObj(){
 	this.quoteList = [];
 }
 
+//method to add quotes to quoteListObj
 quoteListObj.prototype.add = function(quote, author){
 	"use strict";
 	var new_quote = [];
