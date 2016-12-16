@@ -7,6 +7,7 @@ const body = document.querySelector('body');
 const jQueryFileLink = '<script src="js_and_plugins/jquery-3.1.1.min.js"></script>';
 const animsitionFileLink = '<script src="js_and_plugins/animsition/animsition.min.js"></script>';
 const stickyFileLink = '<script src="js_and_plugins/sticky/jquery.sticky.js"></script>';
+const slickFileLink = '<script src="js_and_plugins/slick/slick.min.js"></script>';
 const uiFileLink = '<script src="js_and_plugins/ui.js"></script>';
 const mainJSfileLink = '<script src="js_and_plugins/main.js"></script>'; 	
 
@@ -14,6 +15,7 @@ const mainJSfileLink = '<script src="js_and_plugins/main.js"></script>';
 body.insertAdjacentHTML('beforeend', jQueryFileLink);
 body.insertAdjacentHTML('beforeend', animsitionFileLink);
 body.insertAdjacentHTML('beforeend', stickyFileLink);
+body.insertAdjacentHTML('beforeend', slickFileLink);
 body.insertAdjacentHTML('beforeend', uiFileLink);
 body.insertAdjacentHTML('beforeend', mainJSfileLink);
 
