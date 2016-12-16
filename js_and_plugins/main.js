@@ -1,6 +1,4 @@
-//add all necessary JavaScript files
-$("div.footer").append('<script src="js_and_plugins/footer.js"></script>');
-
+/*jshint esversion: 6 */
 
 //animate page when loading
 $(".animsition").animsition();
@@ -48,13 +46,6 @@ $("#author_view").append(the_quote_list.quoteList[0][1]);
 $(window).on( "unload", function(){
 	alert("sometext");
 });
-
-
-
-
-
-
-
 
 
 
